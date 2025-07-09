@@ -1,0 +1,12 @@
+<!-- src/app/dashboard/dashboard.component.html -->
+<div class="dashboard-container">
+  <h1>Welcome to Your Dashboard 🎉</h1>
+  <p>This is the secure area after login.</p>
+
+  <nav>
+    <a routerLink="/">🏠 Home</a> |
+    <a href="#" (click)="logout()">🔓 Logout</a>
+      <a routerLink="/profile">👤 Profile</a> 
+      <a routerLink="/user/bookings">📅 My Bookings</a>
+  </nav>
+</div>

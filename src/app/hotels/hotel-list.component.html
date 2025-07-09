@@ -1,0 +1,36 @@
+<!-- <h2>🏨 Hotels in {{ locality | titlecase }}</h2>
+
+<div *ngFor="let hotel of hotels" class="hotel-card">
+  <img [src]="hotel.image" alt="{{ hotel.name }}" class="hotel-image" />
+
+  <h3>{{ hotel.name }}</h3>
+  <p>{{ hotel.address }}</p>
+  <p>Price: ₹{{ hotel.price }}</p>
+  <p>⭐ {{ hotel.rating }}</p>
+
+  <button (click)="onBookNow(hotel.name)">Book Now</button>
+
+  <app-booking-form
+    *ngIf="selectedHotel === hotel.name"
+    [hotelName]="hotel.name"
+  ></app-booking-form>
+</div> -->
+
+
+<h2>🏨 Hotels in {{ locality | titlecase }}</h2>
+
+<div *ngFor="let hotel of hotels" class="hotel-card">
+  <img [src]="hotel.image" alt="{{ hotel.name }}" width="300" height="200" />
+
+  <h3>{{ hotel.name }}</h3>
+  <p>{{ hotel.address }}</p>
+  <p>Price: ₹{{ hotel.price }}</p>
+  <p>⭐ {{ hotel.rating }}</p>
+
+  <button (click)="onBookNow(hotel.name)">Book Now</button>
+
+  <app-booking-form
+    *ngIf="selectedHotel === hotel.name"
+    [hotelName]="hotel.name"
+  ></app-booking-form>
+</div>

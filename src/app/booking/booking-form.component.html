@@ -1,0 +1,15 @@
+<div class="booking-form-container">
+  <h3>Booking for {{ hotelName }}</h3>
+  <form [formGroup]="bookingForm" (ngSubmit)="bookRoom()">
+    <label>Check-in Date</label>
+    <input type="date" formControlName="checkInDate" />
+
+    <label>Check-out Date</label>
+    <input type="date" formControlName="checkOutDate" />
+
+    <label>No. of Guests</label>
+    <input type="number" formControlName="guests" min="1" />
+
+    <button type="submit">Book Room</button>
+  </form>
+</div>

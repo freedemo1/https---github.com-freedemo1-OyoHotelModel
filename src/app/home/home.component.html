@@ -1,0 +1,23 @@
+<p>📍 Selected: {{ selectedLocality }}</p>
+
+<select #localitySelect (change)="onLocalitySelect(localitySelect.value)">
+  <option value="">-- Select Locality --</option>
+  <option *ngFor="let locality of localities" [value]="locality">{{ locality }}</option>
+</select>
+
+
+<div *ngIf="hotels.length > 0">
+  <h2>🏨 Hotels in {{ selectedLocality }}</h2>
+  <div *ngFor="let hotel of hotels" class="hotel-card">
+    <img [src]="hotel.image" alt="{{ hotel.name }}" width="300" height="180"/>
+    <h3>{{ hotel.name }}</h3>
+    <p>{{ hotel.address }}</p>
+    <p>₹{{ hotel.price }} ⭐ {{ hotel.rating }}</p>
+    <button (click)="onBookNow(hotel.name)">Book Now</button>
+
+    <app-booking-form
+      *ngIf="selectedHotel === hotel.name"
+      [hotelName]="hotel.name">
+    </app-booking-form> 
+  </div>
+</div>

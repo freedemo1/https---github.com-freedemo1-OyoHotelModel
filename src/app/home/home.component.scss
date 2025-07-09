@@ -1,0 +1,73 @@
+:host {
+  display: block;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 250px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+select:hover,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+option {
+  padding: 0.5rem;
+}
+
+.hotel-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  max-width: 400px;
+  background-color: #fff;
+}
+
+.hotel-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

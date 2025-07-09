@@ -1,0 +1,10 @@
+<h2>Profile</h2>
+<form [formGroup]="profileForm" (ngSubmit)="saveProfile()">
+  <label>Name</label>
+  <input formControlName="name" /><br/>
+
+  <label>Phone Number</label>
+  <input formControlName="phoneNumber" /><br/>
+
+  <button type="submit">Update Profile</button>
+</form>
